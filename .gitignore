@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-.idea/
-venv/
-=======
 venv/
 /DjangoLearning/.idea/
->>>>>>> .gitignore created
