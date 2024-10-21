@@ -1,0 +1,21 @@
+{% extends 'myshop/index.html' %}
+
+{% block title %}
+    Products list
+{% endblock %}
+{% block body %}
+    <h1>Products:</h1>
+    {% if products %}
+        <div>
+            {% for elem in products %}
+                <div>
+                <p>Name: {{ elem.product_name }}</p>
+                <p>Price: {{ elem.price }}</p>
+                <p>Discount: {% firstof elem.discount 'No discount' %}</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <h3>No products</h3>
+    {% endif %}
+{% endblock %}
