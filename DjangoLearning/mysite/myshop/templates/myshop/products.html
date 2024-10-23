@@ -9,9 +9,11 @@
         <div>
             {% for elem in products %}
                 <div>
-                <p>Name: {{ elem.product_name }}</p>
-                <p>Price: {{ elem.price }}</p>
-                <p>Discount: {% firstof elem.discount 'No discount' %}</p>
+                <ul>
+                    <li>Name: {{ elem.product_name }}</li>
+                    <li>Price: {{ elem.price }}</li>
+                    <li>Discount: {% firstof elem.discount 'No discount' %}</li>
+                    </ul>
                 </div>
             {% endfor %}
         </div>

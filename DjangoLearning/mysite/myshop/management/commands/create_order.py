@@ -1,7 +1,7 @@
 from django.core.management import BaseCommand
 from django.contrib.auth.models import User
 
-from myshop.models import Order
+from myshop.models import Order, Product
 
 
 class Command(BaseCommand):
