@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Main title
+        {% endblock %}
+    </title>
+</head>
+<body>
+{% block body %}
+<div>
+    {% for elem in product %}
+        <li>{{ elem }}</li>
+    {% if elem|length > 2 %}
+        <div><h1>{{ elem }}</h1></div>
+    {% endif %}
+    {% endfor %}
+   <div>
+       {% if 'smartphone' in product %}
+       this is Телефон
+       {% endif %}
+   </div>
+</div>
+{% endblock %}
+</body>
+</html>
