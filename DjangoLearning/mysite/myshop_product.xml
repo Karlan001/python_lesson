@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<row>
+  <id>1</id>
+  <product_name>Laptop</product_name>
+  <product_description></product_description>
+</row>
+<row>
+  <id>2</id>
+  <product_name>SmartphoneDesktop</product_name>
+  <product_description></product_description>
+</row>
+<row>
+  <id>3</id>
+  <product_name>Smartphone</product_name>
+  <product_description></product_description>
+</row>
+<row>
+  <id>4</id>
+  <product_name>Desktop</product_name>
+  <product_description></product_description>
+</row>
+</data>
