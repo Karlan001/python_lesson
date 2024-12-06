@@ -1,4 +1,3 @@
-{"id": 872, "Name": "tom", "Birthday": "20.11.1996", "TypePet": "cat", "Commands": ["sit", "give hand"]}
-{"id": 40, "Name": "adi", "Birthday": "20.11.1996", "TypePet": "собака", "Commands": ["sit", "give hand", "сидеть"]}
-{"id": 616, "Name": "tom", "Birthday": "20.11.1996", "TypePet": "cat", "Commands": ["sit", "give hand"]}
-{"id": 728, "Name": "adi", "Birthday": "20.11.1996", "TypePet": "собака", "Commands": ["sit", "give hand", "Лежать"]}
+{"id": 597, "Name": "tom", "Birthday": "20.11.1996", "TypePet": "cat", "Commands": []}
+{"id": 999, "Name": "adi", "Birthday": "20.11.1996", "TypePet": "собака", "Commands": ["sit"]}
+{"id": 309, "Name": "tom", "Birthday": "1.1.1.1", "TypePet": "cat", "Commands": []}
