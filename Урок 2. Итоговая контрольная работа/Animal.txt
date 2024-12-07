@@ -1,5 +1,5 @@
 {"id": 670, "Name": "borya", "Birthday": "20.11.1996", "TypePet": "horse", "Commands": []}
 {"id": 697, "Name": "tom", "Birthday": "20.11.1996", "TypePet": "cat", "Commands": []}
-{"id": 780, "Name": "adi", "Birthday": "20.11.1996", "TypePet": "собака", "Commands": []}
+{"id": 780, "Name": "adi", "Birthday": "20.11.1996", "TypePet": "собака", "Commands": ["Сидеть"]}
 {"id": 358, "Name": "borya", "Birthday": "20.11.1996", "TypePet": "horse", "Commands": []}
 {"id": 360, "Name": "Реда", "Birthday": "2.2.2.2", "TypePet": "домашний", "Commands": []}

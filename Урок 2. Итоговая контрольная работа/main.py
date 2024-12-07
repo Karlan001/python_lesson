@@ -1,7 +1,7 @@
 import json
 import random
 
-Pets = ["Домашний", "Домашнее", "Домашняя"]
+Pets = ["домашний", "домашнее", "домашняя"]
 
 
 def get_data(type_pet: str) -> list:
@@ -53,6 +53,8 @@ def get_commands_animal(name: str, type_pet: str):
         if animal_name.lower() == name.lower():
             count += 1
             print(f'{count} Питомец {name} умеет:', ', '.join(animal['Commands']))
+    if count == 0:
+        print(f'Питомца с именем {name} не найдено')
     print()
 
 
@@ -110,7 +112,7 @@ def main():
             case 1:
                 try:
                     name, type_pet = input(
-                        'Введите имя питомца и его тип (домашнее, вьючное) через пробел: ').split()
+                        'Введите имя питомца и его тип (домашнее, вьючное) через пробел: ').lower().split()
                     get_commands_animal(name, type_pet)
                 except ValueError:
                     print('Введены не все необходимые данные')
@@ -119,7 +121,7 @@ def main():
                 try:
                     name, birthday, type_pet = input(
                         'Введите имя, дату рождения, тип питомца (вьючное, домашнее) '
-                        'через пробел: ').split()
+                        'через пробел: ').lower().split()
                     add_animals(name, birthday, type_pet)
                 except ValueError:
                     print('Введены не все необходимые данные')
@@ -127,7 +129,7 @@ def main():
             case 3:
                 try:
                     name, type_pet = input(
-                        'Введите имя питомца и его тип (вьючное, домашнее) через пробел: ').split()
+                        'Введите имя питомца и его тип (вьючное, домашнее) через пробел: ').lower().split()
                     learning_new_command(name, type_pet)
                 except ValueError:
                     print('Введены не все необходимые данные')
