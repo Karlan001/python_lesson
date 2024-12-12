@@ -27,7 +27,7 @@ class Middleware:
         self.user_info = {}
 
     def __call__(self, request):
-        time_delta = 5
+        time_delta = 0
         response = self.get_response(request)
         time_request = datetime.datetime.now()
         user_address = request.META['REMOTE_ADDR']

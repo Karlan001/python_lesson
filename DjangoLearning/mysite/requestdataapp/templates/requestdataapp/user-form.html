@@ -9,18 +9,21 @@
     <div>
         <form method="post">
             {% csrf_token %}
-            <p>
-                <label for="name">Full name</label>
-                <input id='name' name="name" type="text" maxlength="100">
-            </p>
-            <p>
-                <label for="age">Age</label>
-                <input id='age' name="age" type="number" min="1" max="99">
-            </p>
-            <p>
-                <label for="bio">BIO</label>
-                <textarea name="bio" id="bio" cols="42" rows="5"></textarea>
-            </p>
+{#            Ручное создание формы#}
+{#            <p>#}
+{#                <label for="name">Full name</label>#}
+{#                <input id='name' name="name" type="text" maxlength="100">#}
+{#            </p>#}
+{#            <p>#}
+{#                <label for="age">Age</label>#}
+{#                <input id='age' name="age" type="number" min="1" max="99">#}
+{#            </p>#}
+{#            <p>#}
+{#                <label for="bio">BIO</label>#}
+{#                <textarea name="bio" id="bio" cols="42" rows="5"></textarea>#}
+{#            </p>#}
+{#            Форма Django#}
+            {{ form.as_p }}
             <button type="submit">
                 Submit
             </button>

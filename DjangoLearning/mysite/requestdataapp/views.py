@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest
 from django.core.files.storage import FileSystemStorage
+from .form import UserBioForm
 
 
 def get_request_method(request: HttpRequest) -> HttpResponse:
@@ -14,8 +15,13 @@ def get_request_method(request: HttpRequest) -> HttpResponse:
     }
     return render(request, 'requestdataapp/request-query-params.html', context=context)
 
+
 def user_form(request: HttpRequest) -> HttpResponse:
-    return render(request, 'requestdataapp/user-form.html')
+    context = {
+        'form': UserBioForm(),
+    }
+    return render(request, 'requestdataapp/user-form.html', context=context)
+
 
 def upload_file(request: HttpRequest) -> HttpResponse:
     if request.method == 'POST' and request.FILES.get('myfile'):
@@ -30,6 +36,5 @@ def upload_file(request: HttpRequest) -> HttpResponse:
         else:
             print('Файл превышает допустимый размер в байтах')
             return render(request, 'requestdataapp/base.html')
-
 
     return render(request, 'requestdataapp/upload-file.html')
