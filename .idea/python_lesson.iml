@@ -12,6 +12,7 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/DjangoLearning/mysite/myshop/templates" />
+        <option value="$MODULE_DIR$/DjangoLearning/mysite/requestdataapp/templates" />
       </list>
     </option>
   </component>
